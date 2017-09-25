@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Places I've Visited</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places I've Visited</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <h2>Add a place you've visited:</h2>
+          <form id="new-place">
+            <div class="form-group">
+              <label for="new-location">Location</label>
+              <input type="text" class="form-control" id="new-location">
+            </div>
+            <div class="form-group">
+              <label for="new-landmarks">Landmarks</label>
+              <input type="text" class="form-control" id="new-landmarks">
+            </div>
+            <div class="form-group">
+              <label for="new-date">Time Of Year Visted</label>
+              <input type="text" class="form-control" id="new-date">
+            </div>
+            <div class="form-group">
+              <label for="new-notes">Traveler Notes</label>
+              <input type="text" class="form-control" id="new-notes">
+            </div>
+
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Places visited:</h2>
+          <ul id="places">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-place">
+            <h2></h2>
+
+            <p>Location: <span class="location"></span></p>
+            <p>Landmarks: <span class="landmarks"></span></p>
+            <p>Date: <span class="date"></span></p>
+            <p>Traveler Notes: <span class="notes"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
